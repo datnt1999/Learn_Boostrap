@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Bài 6: Grid Layout tiếp theo</title>
+    <style>
+        section{
+            padding: 60px 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-md navbar-light">
+        <div class="container-xxl">
+            <a href="#intro" class="navbar-brand">
+                <span class="fw-bold text-secondary">
+                    Net Ninja Pro - the Book
+                </span>
+            </a>
+            <!-- Toogle button for mobile nav -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+             data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About the book</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Review</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Get in touch</a>
+                    </li>
+                    <li class="nav-item d-md-none">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item ms-2 d-none d-md-inline">
+                        <a class= "btn btn-secondary" href="#">Buy Now</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- My image & intro text -->
+    <section class="intro">
+        <div class="container-lg">
+            <div class="row justify-content-center">
+                <div class="col-md-5 text-center text-md-start">
+                    <h1>
+                        <div class="display-2">Black-Belt</div>
+                        <div class="display-5 text-muted">Your Coding Skills</div>
+                    </h1>
+                    <p class="lead my-4 text-muted">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Id culpa reprehenderit harum suscipit, nesciunt odit.
+                    </p>
+                    <a href="#" class="btn btn-secondary btn-lg">Buy now</a>
+                </div>
+                <div class="col-md-5 text-center d-none d-md-block">
+                    <img class="img-fluid"src="ebook-cover.png" alt="#">
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
